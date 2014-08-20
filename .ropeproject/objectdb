@@ -1,11 +1,12 @@
-€}q(UC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyq}q(UStorageDomains.listqcrope.base.oi.memorydb
+€}q(U?/usr/lib/python2.6/site-packages/ovirtsdk/utils/searchhelper.pyq}qUSearchHelper.filterResultsqcrope.base.oi.memorydb
 ScopeInfo
-q)q}q(UinstanceqUdefinedq	UC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyUStorageDomains‡†Unone…q
+q)q}qUunknown…q(Ubuiltinq	UdictUnone…q
+h
+t†qh	Ulistqh
+‡qs}q†bsU>/usr/lib/python2.6/site-packages/ovirtsdk/utils/parsehelper.pyq}q(UParseHelper.toCollectionqh)q}q(UdefinedqUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyUStorageDomain‡hh‡qh	hh
+‡qUdefinedqUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyUVMq‡Uunknown…qh‡qUbuiltinqUlistqUnone…q‡qu}q†bUParseHelper.toSubCollectionq h)q!}q"(Udefinedq#UC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyU
+VMSnapshot‡Uunknown…q$h$h$tq%Ubuiltinq&Ulistq'Unone…q(‡q)s}q*†buUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyq+}q,(UVMSnapshots.listq-h)q.}q/Uinstanceh#UC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyUVMSnapshots‡†h(Uunknown…‡q0h&h'h(‡q1s}q2†bUVMs.getq3h)q4}q5(Uinstanceq6hUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyUVMsq7‡†UbuiltinUstr†hhtq8h6hUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyh‡†q9s}q:†bUVMs.listq;h)q<}q=(h6hUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyh7‡†hhhhtq>hhh‡q?s}q@†bUStorageDomains.listqAh)qB}qC(UinstanceqDhUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyUStorageDomains‡†h
 h
 h
-tqUbuiltinqUlistqh
-‡qs}q†bUVMs.listqh)q}q(UinstanceqUdefinedqUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyUVMsq‡†Unone…qhhhtqUbuiltinqUlistqh‡qs}q†bUVMs.getqh)q}q(hhUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyh‡†UbuiltinUstr†hhtqhhUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyUVMq ‡†q!s}q"†buU>/usr/lib/python2.6/site-packages/ovirtsdk/utils/parsehelper.pyq#}q$UParseHelper.toCollectionq%h)q&}q'(h	UC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyUStorageDomain‡Uunknown…q(h(‡q)hhh
-‡q*hUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/brokers.pyh ‡Uunknown…q+h+‡q,hhh‡q-u}q.†bsU?/usr/lib/python2.6/site-packages/ovirtsdk/utils/searchhelper.pyq/}q0USearchHelper.filterResultsq1h)q2}q3h((hUdicth
-h
-t†q4hhh
-‡q5s}q6†bsUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/context.pyq7}q8UContext.managerq9h)q:}q;hh	UC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/context.pyUContext‡†…q<hh	UJ/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/contextmanager.pyUContextManager‡†q=s}q>†bsu.
+tqEh	hh
+‡qFs}qG†buUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/context.pyqH}qIUContext.managerqJh)qK}qLhDhUC/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/context.pyUContext‡†…qMhDhUJ/usr/lib/python2.6/site-packages/ovirtsdk/infrastructure/contextmanager.pyUContextManager‡†qNs}qO†bsu.
