@@ -1,4 +1,5 @@
 import re
+import os
 from ovirtsdk.api import API
 from ovirtsdk.xml import params
 
@@ -21,12 +22,13 @@ def get_Engine_ListofLuns(lun_list):
         for Storage in Host.storage.list():
             lun_list[Host.get_address()].append(Storage.get_logical_unit())
 
-def get_HostIqnList(iqn):
+def get_HostIqnList(host_name):
     """ Gets an empty list and returns it full with hosts
     iqn strings
     """
 
-    with open('/root/Sanity/sessions.log','r') as f:
+    iqn = list()
+    with open('/root/Sanity/%s' %host_name,'r') as f:
         while True:
             line = f.readline()
             if line == '':
@@ -36,11 +38,26 @@ def get_HostIqnList(iqn):
                 continue
             iqn.append(re.split(' ',line)[-1])
             iqn[-1] = iqn[-1].rsplit()
+    return iqn
+
+def get_HostsNames(api,names):
+    """ Gets oVirt's api and an empty list and returns it full with hosts names
+    """
+
+    HOSTSList = api.hosts.list()
+    for HOSTS in HOSTSList:
+        print HOSTS.get_name()
+        names.append(HOSTS.get_name())
 
 if __name__ == "__main__":
-    iqn=list()
-    get_HostIqnList(iqn)
-    print len(iqn)
-    print iqn
+    api = Connect()
+    names=list()
+    get_HostsNames(api,names)
+    for n in names:
+        os.system("./check-iSCSiConnections %s" % n)
+        iq = get_HostIqnList(n)
+        print iq
+#    print len(iqn)
+#    print iqn
 #    get_IqnList(iqn)
 #    print iqn
