@@ -1,0 +1,14 @@
+#!/bin/bash
+
+PATH=/root
+HOME=/Sanity
+PASS=qum5net
+SSHPASS=/usr/bin/sshpass
+PYTHON=/usr/bin/python
+SSH=/usr/bin/ssh
+SCP=/usr/bin/scp
+
+/bin/mkdir "$PATH""$HOME" 2>/dev/null
+$SSHPASS -p $PASS $SSH root@$1 'bash -s' < session.ini 2>/dev/null
+$SSHPASS -p $PASS $SCP root@$1:/root/sessions.log "$PATH""$HOME"
+$PYTHON iSCSi_Connections.py
