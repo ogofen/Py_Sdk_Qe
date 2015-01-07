@@ -4,4 +4,4 @@ u = 'https://10.35.161.36/api'
 insecure=True
 user = 'admin@internal'
 password = 'qum5net'
-api = API(url=u, password=password, username=user, insecure=True)
+api = API(url=u, password=password, username=user, insecure=True, debug=True)

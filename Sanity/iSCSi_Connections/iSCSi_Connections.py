@@ -2,7 +2,9 @@ import re
 import os
 from ovirtsdk.api import API
 from ovirtsdk.xml import params
+from pudb import set_trace
 
+set_trace()
 
 
 def Connect():
