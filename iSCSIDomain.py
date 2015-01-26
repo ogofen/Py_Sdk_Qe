@@ -1,8 +1,7 @@
+#!/usr/bin/python
 import ovirtsdk.xml.params as params
 import ovirtsdk.api
 import sys
-import pudb
-#pudb.set_trace()
 from sdk_connect import Connect
 api = Connect()
 def iSCSI_Create(domain_name,lun_interval):
@@ -47,4 +46,4 @@ def iSCSI_Create(domain_name,lun_interval):
         return
     api.datacenters.list()[0].storagedomains.add(NewSd)
 if __name__ == "__main__":
-        iSCSI_Create("IS",[3,4])
+        iSCSI_Create("iSCSI_5",[1,2])

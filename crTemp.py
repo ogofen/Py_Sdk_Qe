@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from ovirtsdk.api import API
 from ovirtsdk.xml import params
 

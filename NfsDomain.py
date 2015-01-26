@@ -17,4 +17,4 @@ def Nfs_Create(name,path_,address_):
     api.datacenters.list()[0].storagedomains.add(NewSd)
 
 if __name__ == "__main__":
-    Nfs_Create("Nfs_Domain",'/RHEV/ogofen/1','10.35.160.108')
+    Nfs_Create("Nfs_Domain1",'/RHEV/ogofen/3','10.35.160.108')

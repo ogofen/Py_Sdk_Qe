@@ -9,7 +9,7 @@ def checkDisksGrowth(self):
     """	Build a connection string from a dictionary of parameters.Returns string."""
 
     iso = api.storagedomains.get('rhevm-3-iso-lion')
-    file = iso.files.get('RHEL-7-SERVER-dvd1.iso')
+    file = iso.files.get('RHEL-7.0-20131127.1-Server-x86_64-dvd1.iso')
     for SD in api.storagedomains.list():
         print SD.get_name()
         vm_str = "vm_"
@@ -30,6 +30,7 @@ def checkDisksGrowth(self):
         try:
             V = vm.disks.add(a)
             print V
+            vm.start()
         except Exception,e:
             print e
     #tmp_str="template_"
