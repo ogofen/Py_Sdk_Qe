@@ -17,4 +17,4 @@ def Iso_Create(path_,address_):
     api.datacenters.list()[0].storagedomains.add(NewSd)
 
 if __name__ == "__main__":
-    Iso_Create('/RHEV/ogofen/rhevm-3-iso','10.35.160.108')
+    Iso_Create('/RHEV/ogofen/iso-domain-ogofen','10.35.160.108')

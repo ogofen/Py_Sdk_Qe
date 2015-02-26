@@ -46,4 +46,4 @@ def iSCSI_Create(domain_name,lun_interval):
         return
     api.datacenters.list()[0].storagedomains.add(NewSd)
 if __name__ == "__main__":
-        iSCSI_Create("iSCSI_5",[1,2])
+        iSCSI_Create("iSCSI_5",[4,5])
