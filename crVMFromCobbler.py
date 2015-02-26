@@ -6,7 +6,7 @@ import sys
 import time
 api = Connect()
 
-def checkDisksGrowth(self):
+def CreateVM():
     """	Build a connection string from a dictionary of parameters.Returns string."""
 
     for SD in api.storagedomains.list():
@@ -73,5 +73,4 @@ def checkDisksGrowth(self):
     #time.sleep(15)
     #api.templates.add(params.Template(name=tmp_str,vm=vm))
 if __name__ == "__main__":
-    print sys.argv
-    checkDisksGrowth("name")
+    CreateVM()
