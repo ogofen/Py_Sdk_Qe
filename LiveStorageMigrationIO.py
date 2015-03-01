@@ -6,7 +6,7 @@ import sys
 import time
 api = Connect()
 
-def CreateVM():
+def LiveStorageMigrationTest():
     """	Build a connection string from a dictionary of parameters.Returns string."""
 
     for SD in api.storagedomains.list():
@@ -15,7 +15,7 @@ def CreateVM():
         if SD.get_type() != 'data':
             print SD.get_type()
             continue
-        vm_header = "CobblerVM_"
+        vm_header = "LiveStorageMigrateVM_"
         vm_name = vm_header+str(counter)
         while api.vms.get(vm_name) is not None:
             counter +=1
@@ -42,8 +42,17 @@ def CreateVM():
             print e
         time.sleep(13)
         vm.start()
-        time.sleep(90)
+        time.sleep(100)
         vm=api.vms.get(name=vm_name)
+        for SD_target in api.storagedomains.list():
+            print SD_target.get_name()
+            if SD.get_name() != SD_target.get_name() and SD_target.get_storage().get_type() == SD.get_storage().get_type():
+                print SD_target.get_name()
+                a = params.Action()
+                a.set_storage_domain(SD_target)
+                vm.disks.list()[0].move(a)
+                return
+            continue
         while vm.get_status().get_state() != 'down':
             vm=api.vms.get(name=vm_name)
             time.sleep(1)
@@ -61,4 +70,4 @@ def CreateVM():
     #time.sleep(15)
     #api.templates.add(params.Template(name=tmp_str,vm=vm))
 if __name__ == "__main__":
-    CreateVM()
+    LiveStorageMigrationTest()
