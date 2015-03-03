@@ -36,14 +36,26 @@ def iSCSI_Create(domain_name,lun_interval):
         print e
         return
     else:
-        iscsi_storage.set_logical_unit(Lun_list[lun_interval[0]:
-            lun_interval[1]])
-    SD.set_storage(iscsi_storage)
+        FirstIndex = None 
+        Storage = list()
+        for index in range (0,len(Lun_list)):
+            print Lun_list[index].get_status() 
+            if Lun_list[index].get_status() == 'free':
+                print "we are here"
+                if FirstIndex != None:
+                    Storage.append(Lun_list[FirstIndex])
+                    Storage.append(Lun_list[index])
+                    iscsi_storage.set_logical_unit(Storage)
+                    SD.set_storage(iscsi_storage)
+                    print "we are here"
+                    break
+                FirstIndex=index
     try:
+        print "we finally"
         NewSd = api.storagedomains.add(SD)
     except Exception,e:
         print "A problem caught during creating the domain --->",e
         return
     api.datacenters.list()[0].storagedomains.add(NewSd)
 if __name__ == "__main__":
-        iSCSI_Create("iSCSI_5",[4,5])
+        iSCSI_Create("iSCSIAutomate",[4,5])

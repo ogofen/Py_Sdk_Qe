@@ -32,7 +32,7 @@ def CreateVM():
                 template=api.templates.get(name='Blank'))
         api.vms.add(param)
         a = params.Disk(storage_domains=params.StorageDomains(storage_domain=[SD]),
-            size=7368709119,type_='data',interface='virtio',format='cow',bootable='True')
+            size=7368709117,type_='data',interface='virtio',format='cow',bootable='True')
         vm = api.vms.get(name=vm_name)
         vm.nics.add(nic)
        #i vm.permissions.add(admin_vm_manager_perm)
