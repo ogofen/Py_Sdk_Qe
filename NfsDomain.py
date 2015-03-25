@@ -5,16 +5,12 @@ import time
 import sdk_connect
 api = sdk_connect.Connect()
 
-def Nfs_Create(path_,address_):
-    storage_nfs = params.StorageDomain(
-            data_center=api.datacenters.list()[0],
-            type_='data',
-            storage=params.Storage(type_='nfs',
-                address=address_,path=path_),
-            host=params.Host(
-                name=api.hosts.list()[0].get_name()))
+def Nfs_Create(name,path_,address_):
+    storage_nfs = params.StorageDomain(data_center=api.datacenters.list()[0],
+            type_='data',storage=params.Storage(type_='nfs',address=address_,path=path_),
+            host=params.Host(name=api.hosts.list()[0].get_name()),name=name)
     NewSd = api.storagedomains.add(storage_nfs)
     api.datacenters.list()[0].storagedomains.add(NewSd)
 
 if __name__ == "__main__":
-    Nfs_Create('/RHEV/ogofen/NFS-DOMAIN','10.35.160.108')
+    Nfs_Create('NFSAuto','/RHEV/ogofen/NFS-DOMAIN','10.35.160.108')

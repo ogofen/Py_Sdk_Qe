@@ -2,13 +2,11 @@
 from ovirtsdk.api import API
 from ovirtsdk.xml import params
 import time
+from sdk_connect import Connect
 def checkit(self):
     """	Build a connection string from a dictionary of parameters.Returns string."""
 
-    u = 'https://10.35.161.36/ovirt-engine/api'
-    user = 'admin@internal'
-    password = 'qum5net'
-    api = API(url=u, password=password, username=user, insecure=True)
+    api = Connect()
     sd_iscsi=api.storagedomains.list()[0]
     print sd_iscsi.get_name()
     vm_str="vm__"
