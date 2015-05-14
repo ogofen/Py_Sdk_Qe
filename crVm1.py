@@ -1,4 +1,4 @@
-bfrom ovirtsdk.api import API
+from ovirtsdk.api import API
 from ovirtsdk.xml import params
 
 def checkit(self):

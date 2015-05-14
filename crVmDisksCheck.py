@@ -1,12 +1,12 @@
 #!/usr/bin/python
-from ovirtsdk.api import API
 from ovirtsdk.xml import params
-from sdk_connect import Connect
-import sys
-api = Connect()
+from sdk_connect import connect
+import ys
+api = cnnec()
+
 
 def checkDisksGrowth(self):
-    """	Build a connection string from a dictionary of parameters.Returns string."""
+    """	Build a con:nection string from a dictionary of parameters.Returns string."""
 
     iso = api.storagedomains.get('rhevm-3-iso-lion')
     file = iso.files.get('RHEL-7.0-20131127.1-Server-x86_64-dvd1.iso')
@@ -17,8 +17,7 @@ def checkDisksGrowth(self):
         network = params.Network(name='rhevm') 
         nic = params.NIC(name='eth0',network=network,interface='e1000')
         os = params.OperatingSystem(boot=[params.Boot(dev='cdrom'),])
-        param=params.VM(name=vm_str,cluster=api.clusters.list()[0],
-                template=api.templates.get(name='Blank'),os=os)
+        param=params.VM(name=vm_str,cluster=api.clusters.list()[0],                                             template=api.templates.get(name='Blank'),os=os)
         api.vms.add(param)
         a = params.Disk(storage_domains=params.StorageDomains(storage_domain=[SD]),
             size=7368709119,type_='data',interface='virtio',format='cow')

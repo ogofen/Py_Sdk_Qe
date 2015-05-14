@@ -4,10 +4,168 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+API	LiveStorageMigrationIO.py	/^from ovirtsdk.api import API$/;"	i
+API	Sanity/iSCSi_Connections/iSCSi_Connections.py	/^from ovirtsdk.api import API$/;"	i
+API	api_connect.py	/^ovirtsdk.api import API$/;"	i
+API	crTemp.py	/^from ovirtsdk.api import API$/;"	i
 API	crVm.py	/^from ovirtsdk.api import API$/;"	i
-api	crVm.py	/^api = API(url=u, password=password, username=user, insecure=True)$/;"	v
-checkitnow	crVm.py	/^def checkitnow(node):$/;"	f
+API	crVm1.py	/^from ovirtsdk.api import API$/;"	i
+API	crVmWithNfs.py	/^from ovirtsdk.api import API$/;"	i
+API	import.py	/^from ovirtsdk.api import API$/;"	i
+API	runVms.py	/^from ovirtsdk.api import API$/;"	i
+API	sdk_connect.py	/^from ovirtsdk.api import API$/;"	i
+Connect	FcpDomain.py	/^from sdk_connect import Connect$/;"	i
+Connect	LiveStorageMigrationIO.py	/^from sdk_connect import Connect$/;"	i
+Connect	Sanity/iSCSi_Connections/iSCSi_Connections.py	/^def Connect():$/;"	f
+Connect	crVm.py	/^from sdk_connect import Connect$/;"	i
+Connect	runVms.py	/^from sdk_connect import Connect$/;"	i
+Fcp_Create	FcpDomain.py	/^def Fcp_Create(domain_name,lun_interval):$/;"	f
+LiveStorageMigrationTest	LiveStorageMigrationIO.py	/^def LiveStorageMigrationTest():$/;"	f
+__author__	makeStaticHosts.py	/^__author__ = 'ogofen'$/;"	v
+__author__	systest.py	/^__author__ = 'ogofen'$/;"	v
+__init__	Sanity/iSCSi_Connections/iSCSi_Connections.py	/^    def __init__(self):$/;"	m	class:iSCSiConnections
+a	move_disk.py	/^a = api.disks.list()[0]$/;"	v
+action	move_disk.py	/^action = params.Action()$/;"	v
+api	FcpDomain.py	/^api = Connect()$/;"	v
+api	FcpDomain.py	/^import ovirtsdk.api$/;"	i
+api	IsoDomain.py	/^    api = sdk_connect.connect()$/;"	v
+api	LiveStorageMigrationIO.py	/^api = Connect()$/;"	v
+api	NfsDomain.py	/^api = sdk_connect.connect()$/;"	v
+api	api_connect.py	/^api = sdk_connect.connect()$/;"	v
+api	attach_snap.py	/^api = ovirtsdk.api.API($/;"	v
+api	attach_snap.py	/^import ovirtsdk.api$/;"	i
+api	attach_snap_liron.py	/^api = ovirtsdk.api.API($/;"	v
+api	attach_snap_liron.py	/^import ovirtsdk.api$/;"	i
+api	crVMFromCobbler.py	/^api = connect()$/;"	v
+api	crVmDisksCheck.py	/^api = cnnec()$/;"	v
+api	crVmWithNfs.py	/^api = connect()$/;"	v
+api	iSCSIDomain.py	/^api = connect()$/;"	v
+api	iSCSIDomain.py	/^import ovirtsdk.api$/;"	i
+api	import.py	/^api = API(url=u, password=password, username=user, insecure=True)$/;"	v
+api	listHostsID.py	/^api = connect()$/;"	v
+api	listVmsIps.py	/^import ovirtsdk.api$/;"	i
+api	makeStaticHosts.py	/^api = connect()$/;"	v
+api	runVms.py	/^api = Connect()$/;"	v
+appliance	attach_snap.py	/^appliance = api.vms.get("ori")$/;"	v
+appliance	attach_snap_liron.py	/^appliance = api.vms.get("ori")$/;"	v
+argv	systest.py	/^from sys import argv$/;"	i
+checkDisksGrowth	crVmDisksCheck.py	/^def checkDisksGrowth(self):$/;"	f
+checkit	crTemp.py	/^def checkit(self):$/;"	f
+checkit	crVm.py	/^def checkit(self):$/;"	f
+checkit	crVm1.py	/^def checkit(self):$/;"	f
+checkit	crVmWithNfs.py	/^def checkit(self):$/;"	f
+compareHosts	Sanity/iSCSi_Connections/iSCSi_Connections.py	/^    def compareHosts(self):$/;"	m	class:iSCSiConnections
+configuration_data	attach_snap.py	/^        configuration_data = current.get_initialization().get_configuration().get_data()$/;"	v
+configuration_data	attach_snap.py	/^configuration_data = None$/;"	v
+configuration_data	attach_snap_liron.py	/^        configuration_data = current.get_initialization().get_configuration().get_data()$/;"	v
+configuration_data	attach_snap_liron.py	/^configuration_data = None$/;"	v
+connect	crVMFromCobbler.py	/^from sdk_connect import connect$/;"	i
+connect	crVmDisksCheck.py	/^from sdk_connect import connect$/;"	i
+connect	crVmWithNfs.py	/^from sdk_connect import connect$/;"	i
+connect	iSCSIDomain.py	/^from sdk_connect import connect$/;"	i
+connect	listHostsID.py	/^from sdk_connect import connect$/;"	i
+connect	listVmsIps.py	/^from sdk_connect import connect$/;"	i
+connect	makeStaticHosts.py	/^from sdk_connect import connect$/;"	i
+connect	sdk_connect.py	/^def connect():$/;"	f
+connection	Sanity/iSCSi_Connections/iSCSi_Connections.py	/^    connection = iSCSiConnections()$/;"	v	class:iSCSiConnections
+create_vm	crVMFromCobbler.py	/^def create_vm():$/;"	f
+debug	attach_snap.py	/^    debug=False$/;"	v
+debug	attach_snap_liron.py	/^    debug=False$/;"	v
+disk	attach_snap.py	/^disk = disks[0]$/;"	v
+disk	attach_snap_liron.py	/^        disk = current$/;"	v
+disk	attach_snap_liron.py	/^disk = None$/;"	v
+disks	attach_snap.py	/^disks = snap.disks.list()$/;"	v
+disks	attach_snap_liron.py	/^disks = snap.disks.list()$/;"	v
+get_HostIqnList	Sanity/iSCSi_Connections/iSCSi_Connections.py	/^    def get_HostIqnList(self,host_address):$/;"	m	class:iSCSiConnections
+iSCSI_Create	iSCSIDomain.py	/^def iSCSI_Create(domain_name):$/;"	f
+iSCSiConnections	Sanity/iSCSi_Connections/iSCSi_Connections.py	/^class iSCSiConnections():$/;"	c
+insecure	attach_snap.py	/^    insecure=True,$/;"	v
+insecure	attach_snap_liron.py	/^    insecure=True,$/;"	v
+iscsi_create_	iSCSIDomain.py	/^def iscsi_create_(domain_name):$/;"	f
+iso_create	crVMFromCobbler.py	/^from IsoDomain import iso_create$/;"	i
+listVmsIps	listVmsIps.py	/^def listVmsIps():$/;"	f
+listhostsid	listHostsID.py	/^def listhostsid():$/;"	f
+log	attach_snap.py	/^log = logging.getLogger()$/;"	v
+log	attach_snap_liron.py	/^log = logging.getLogger()$/;"	v
+logging	attach_snap.py	/^import logging$/;"	i
+logging	attach_snap_liron.py	/^import logging$/;"	i
+make_vms_static	makeStaticHosts.py	/^def make_vms_static():$/;"	f
+nfs_create	NfsDomain.py	/^def nfs_create(path_, address_):$/;"	f
+os	Sanity/iSCSi_Connections/iSCSi_Connections.py	/^import os$/;"	i
+ovirtsdk	FcpDomain.py	/^import ovirtsdk.api$/;"	i
+ovirtsdk	FcpDomain.py	/^import ovirtsdk.xml.params as params$/;"	i
+ovirtsdk	attach_snap.py	/^import ovirtsdk.api$/;"	i
+ovirtsdk	attach_snap.py	/^import ovirtsdk.xml$/;"	i
+ovirtsdk	attach_snap_liron.py	/^import ovirtsdk.api$/;"	i
+ovirtsdk	attach_snap_liron.py	/^import ovirtsdk.xml$/;"	i
+ovirtsdk	iSCSIDomain.py	/^import ovirtsdk.api$/;"	i
+ovirtsdk	iSCSIDomain.py	/^import ovirtsdk.xml.params as params$/;"	i
+ovirtsdk	listVmsIps.py	/^import ovirtsdk.api$/;"	i
+ovirtsdk	listVmsIps.py	/^import ovirtsdk.xml.params as params$/;"	i
+params	FcpDomain.py	/^import ovirtsdk.xml.params as params$/;"	i
+params	IsoDomain.py	/^from ovirtsdk.xml import params$/;"	i
+params	LiveStorageMigrationIO.py	/^from ovirtsdk.xml import params$/;"	i
+params	NfsDomain.py	/^from ovirtsdk.xml import params$/;"	i
+params	Sanity/iSCSi_Connections/iSCSi_Connections.py	/^from ovirtsdk.xml import params$/;"	i
+params	api_connect.py	/^from ovirtsdk.xml import params$/;"	i
+params	attach_snap.py	/^from ovirtsdk.xml import params$/;"	i
+params	attach_snap_liron.py	/^from ovirtsdk.xml import params$/;"	i
+params	crTemp.py	/^from ovirtsdk.xml import params$/;"	i
+params	crVMFromCobbler.py	/^from ovirtsdk.xml import params$/;"	i
 params	crVm.py	/^from ovirtsdk.xml import params$/;"	i
-password	crVm.py	/^password = 'qum5net'$/;"	v
-u	crVm.py	/^u = 'https:\/\/10.35.163.66\/api'$/;"	v
-user	crVm.py	/^user = 'admin@internal'$/;"	v
+params	crVm1.py	/^from ovirtsdk.xml import params$/;"	i
+params	crVmDisksCheck.py	/^from ovirtsdk.xml import params$/;"	i
+params	crVmWithNfs.py	/^from ovirtsdk.xml import params$/;"	i
+params	iSCSIDomain.py	/^import ovirtsdk.xml.params as params$/;"	i
+params	import.py	/^from ovirtsdk.xml import params$/;"	i
+params	listVmsIps.py	/^import ovirtsdk.xml.params as params$/;"	i
+params	makeStaticHosts.py	/^from ovirtsdk.xml import params$/;"	i
+params	runVms.py	/^from ovirtsdk.xml import params$/;"	i
+password	attach_snap.py	/^    password="qum5net",$/;"	v
+password	attach_snap_liron.py	/^    password="qum5net",$/;"	v
+password	import.py	/^password = 'qum5net'$/;"	v
+project_opened	.ropeproject/config.py	/^def project_opened(project):$/;"	f
+pudb	FcpDomain.py	/^import pudb$/;"	i
+re	Sanity/iSCSi_Connections/iSCSi_Connections.py	/^import re$/;"	i
+runVms	runVms.py	/^def runVms(self):$/;"	f
+sd	move_disk.py	/^sd = api.storagedomains.get(name='nfs_2')$/;"	v
+sdk_connect	IsoDomain.py	/^import sdk_connect$/;"	i
+sdk_connect	NfsDomain.py	/^import sdk_connect$/;"	i
+sdk_connect	api_connect.py	/^import sdk_connect$/;"	i
+set_prefs	.ropeproject/config.py	/^def set_prefs(prefs):$/;"	f
+set_trace	Sanity/iSCSi_Connections/iSCSi_Connections.py	/^from pudb import set_trace$/;"	i
+snap	attach_snap.py	/^        snap = current$/;"	v
+snap	attach_snap.py	/^snap = None$/;"	v
+snap	attach_snap_liron.py	/^        snap = current$/;"	v
+snap	attach_snap_liron.py	/^snap = None$/;"	v
+snaps	attach_snap.py	/^snaps = vm.snapshots.list(all_content=True)$/;"	v
+snaps	attach_snap_liron.py	/^snaps = vm.snapshots.list(all_content=True)$/;"	v
+so_create	IsoDomain.py	/^def so_create(path_, address_):$/;"	f
+start	Sanity/iSCSi_Connections/iSCSi_Connections.py	/^    def start(self):$/;"	m	class:iSCSiConnections
+storage_nfs	import.py	/^storage_nfs = params.StorageDomain(type_='data',storage=params.Storage(type_='nfs',address='10.35.160.108',path='\/RHEV\/ogofen\/1'),host=params.Host(name=api.hosts.list()[0].get_name()))$/;"	v
+sys	FcpDomain.py	/^import sys$/;"	i
+sys	LiveStorageMigrationIO.py	/^import sys$/;"	i
+sys	iSCSIDomain.py	/^import sys$/;"	i
+sys	listVmsIps.py	/^import sys$/;"	i
+sys	runVms.py	/^import sys$/;"	i
+time	LiveStorageMigrationIO.py	/^import time$/;"	i
+time	crVMFromCobbler.py	/^import time$/;"	i
+time	crVm.py	/^import time$/;"	i
+time	import.py	/^import time$/;"	i
+time	makeStaticHosts.py	/^import time$/;"	i
+u	import.py	/^u = 'https:\/\/10.35.161.36\/ovirt-engine\/api'$/;"	v
+url	attach_snap.py	/^    url="https:\/\/10.35.161.36\/api",$/;"	v
+url	attach_snap_liron.py	/^    url="https:\/\/10.35.161.36\/api",$/;"	v
+user	import.py	/^user = 'admin@internal'$/;"	v
+username	attach_snap.py	/^    username="admin@internal",$/;"	v
+username	attach_snap_liron.py	/^    username="admin@internal",$/;"	v
+vm	attach_snap.py	/^vm = api.vms.get("vm_snapshot")$/;"	v
+vm	attach_snap_liron.py	/^vm = api.vms.get("vm_snapshot")$/;"	v
+x	move_disk.py	/^x = a.get_storage_domains()$/;"	v
+xml	FcpDomain.py	/^import ovirtsdk.xml.params as params$/;"	i
+xml	attach_snap.py	/^import ovirtsdk.xml$/;"	i
+xml	attach_snap_liron.py	/^import ovirtsdk.xml$/;"	i
+xml	iSCSIDomain.py	/^import ovirtsdk.xml.params as params$/;"	i
+xml	listVmsIps.py	/^import ovirtsdk.xml.params as params$/;"	i
+ys	crVmDisksCheck.py	/^import ys$/;"	i
+yu__author__	listHostsID.py	/^yu__author__ = 'ogofen'$/;"	v
